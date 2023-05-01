@@ -66,7 +66,7 @@
                 </ul>
             </div>
             @endif
-            <form action="{{ route('process') }}" method="post" role="form" class="php-email-form">
+            <form action="process" method="post" role="form" class="php-email-form">
               @csrf
               <div class="row">
                 <h3>Send Me an Email</h3>
@@ -92,7 +92,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit" value="Send">Send Message</button></div>
+              <div class="text-center"><button type="submit" value="Process">Send Message</button></div>
             </form>
           </div>
 

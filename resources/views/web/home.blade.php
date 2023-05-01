@@ -77,7 +77,7 @@
         <div class="count-box">
           <i class="bi bi-book"></i>
           <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
-          <p><strong>Years of Novels Read</strong> which equals to tens of thousands of chapter.</p>
+          <p><strong>Years</strong>+ of reading foreign language novels.</p>
         </div>
       </div>
 
