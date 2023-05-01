@@ -68,8 +68,8 @@
       <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
         <div class="count-box">
           <i class="bi bi-emoji-smile"></i>
-          <span data-purecounter-start="0" data-purecounter-end="" data-purecounter-duration="1" class="purecounter"></span>
-          <p><strong></strong></p>
+          <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Years</strong> as a computer enthusiast.</p>
         </div>
       </div>
 
@@ -85,7 +85,7 @@
         <div class="count-box">
           <i class="bi bi-person-workspace"></i>
           <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
-          <p><strong>Web Projects</strong> completed</p>
+          <p><strong>Web Projects</strong> completed.</p>
         </div>
       </div>
 
@@ -93,7 +93,7 @@
         <div class="count-box">
           <i class="bi bi-calendar-event"></i>
           <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
-          <p><strong>Events</strong> completed as a part of committee</p>
+          <p><strong>Events</strong> completed as a part of committee.</p>
         </div>
       </div>
 
