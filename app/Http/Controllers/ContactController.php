@@ -22,14 +22,17 @@ class ContactController extends Controller
     }
     public function process(Request $request)
       {
-        $this -> validate($request, [
+        $validation -> validate($request, [
             'name' => 'required|min:5|max:50',
             'email' => 'required|email',
             'subject' => 'required|max:50',
             'message' => 'required|'
         ]
                          );
-        return view('contact');
+        Contact::create($validation->all());
+  
+        return redirect()->back()
+                         ->with(['success' => 'Your email has been sent!. We will reply shortly.']);
       }
   
 }
