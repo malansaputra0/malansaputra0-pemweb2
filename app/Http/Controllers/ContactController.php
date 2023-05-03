@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\RedirectResponse;
 use App\Http\Controllers\Controller;
 use App\Models\Post;
 
@@ -20,19 +21,18 @@ class ContactController extends Controller
 
         return view("web/contact", $data);
     }
-    public function process(Request $request)
+    public function process(Request $request): RedirectResponse
       {
-        $validation -> validate($request, [
+        $request -> validate($request, [
             'name' => 'required|min:5|max:50',
             'email' => 'required|email',
             'subject' => 'required|max:50',
             'message' => 'required|'
         ]
                          );
-        Contact::create($validation->all());
-  
-        return redirect()->back()
-                         ->with(['success' => 'Your email has been sent!. We will reply shortly.']);
+        
+        return redirect()->back();
+                         
       }
   
 }

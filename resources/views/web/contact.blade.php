@@ -57,7 +57,9 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            @if ($errors -> any())
+            <form action="{{ route('validate') }}" method="post" role="form" class="php-email-form">
+              @csrf
+              @if ($errors -> any())
             <div class="alert alert-danger">
                 <ul>
                     @foreach ($errors->all() as $error)
@@ -66,8 +68,6 @@
                 </ul>
             </div>
             @endif
-            <form action="process" method="post" role="form" class="php-email-form">
-              @csrf
               <div class="row">
                 <h3>Send Me an Email</h3>
                 <div class="form-group col-md-6">

@@ -22,4 +22,4 @@ Route::get("portfolio", [PortfolioController::class, "index"])->name("portfolio"
 
 Route::get("contact", [ContactController::class, "index"])->name("contact");
 
-Route::post("process", [ContactController::class, "process"])->name("process");
+Route::post("process", [ContactController::class, "process"])->name("validate");
