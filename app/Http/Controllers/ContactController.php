@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
 use App\Http\Controllers\Controller;
-use App\Models\Post;
 
 class ContactController extends Controller
 {
@@ -23,15 +22,15 @@ class ContactController extends Controller
     }
     public function process(Request $request): RedirectResponse
       {
-        $request -> validate($request, [
-            'name' => 'required|min:5|max:50',
+        $request -> validate([
+            'name' => 'required|string|min:5|max:50',
             'email' => 'required|email',
             'subject' => 'required|max:50',
-            'message' => 'required|'
+            'message' => 'required|max:255'
         ]
                          );
         
-        return redirect()->back();
+        return redirect()->back()->with('success', 'Email sent successfully');
                          
       }
   

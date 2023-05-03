@@ -772,6 +772,10 @@ section {
 .contact .php-email-form input {
   height: 44px;
 }
+.contact .php-email-form .error_msg {
+  font-size:10px;
+  color: red;
+}
 
 .contact .php-email-form textarea {
   padding: 10px 15px;
