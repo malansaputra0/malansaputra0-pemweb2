@@ -23,7 +23,7 @@ class ContactController extends Controller
     public function process(Request $request): RedirectResponse
       {
         $request -> validate([
-            'name' => 'required|string|min:5|max:50',
+            'name' => 'required|string|max:50',
             'email' => 'required|email',
             'subject' => 'required|max:50',
             'message' => 'required|max:255'

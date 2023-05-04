@@ -9,7 +9,6 @@
     <p>I'm a <span class="typed" data-typed-items="Developer, Programmer, Writer"></span></p>
   </div>
 </section><!-- End Hero -->
-
 <main id="main">
 
 <!-- ======= About Section ======= -->
@@ -54,7 +53,7 @@
   </div>
 </section><!-- End About Section -->
 
-  <!-- ======= Interests Section ======= -->
+<!-- ======= Interests Section ======= -->
 <section id="interests" class="interests section-bg">
   <div class="container">
 
